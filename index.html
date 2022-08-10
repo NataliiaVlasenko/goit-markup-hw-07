@@ -342,44 +342,44 @@
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="clients">
-            <li class="item-client">
-              <a href="/" class="link-client">
-                <svg class="client-icon">
+            <li class="client__item">
+              <a href="/" class="client__link">
+                <svg class="client__icon">
                   <use href="./images/sprite.svg#icon-client1"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-client">
-              <a href="/" class="link-client">
-                <svg class="client-icon">
+            <li class="client__item">
+              <a href="/" class="client__link">
+                <svg class="client__icon">
                   <use href="./images/sprite.svg#icon-client2"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-client">
-              <a href="/" class="link-client">
-                <svg class="client-icon">
+            <li class="client__item">
+              <a href="/" class="client__link">
+                <svg class="client__icon">
                   <use href="./images/sprite.svg#icon-client3"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-client">
-              <a href="/" class="link-client">
-                <svg class="client-icon">
+            <li class="client__item">
+              <a href="/" class="client__link">
+                <svg class="client__icon">
                   <use href="./images/sprite.svg#icon-client4"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-client">
-              <a href="/" class="link-client">
-                <svg class="client-icon">
+            <li class="client__item">
+              <a href="/" class="client__link">
+                <svg class="client__icon">
                   <use href="./images/sprite.svg#icon-client5"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-client">
-              <a href="/" class="link-client">
-                <svg class="client-icon">
+            <li class="client__item">
+              <a href="/" class="client__link">
+                <svg class="client__icon">
                   <use href="./images/sprite.svg#icon-client6"></use>
                 </svg>
               </a>
@@ -476,39 +476,39 @@
 <div class="backdrop is-hidden" data-modal>
 <div class="modal">
 <button class="close-btn" type="button" data-modal-close>
-      <svg class="close-icon" width="32" height="32">
+      <svg class="close-btn__icon" width="32" height="32">
       <use href="./images/sprite.svg#icon-close"> </use>
       </svg>
 </button>
-<h1 class="form-header">Оставьте свои данные, мы вам перезвоним</h1>
+<h1 class="form__header">Оставьте свои данные, мы вам перезвоним</h1>
 <form action="/" method="post" class="form" autocomplete="off">
-  <div class="form-group">
+  <div class="form__group">
 <label for="name">Имя</label>
 
 <input type="text" id="name" name="name">
-<svg class="input-icon" width="18" height="18">
+<svg class="input__icon" width="18" height="18">
   <use href="./images/sprite.svg#icon-person-black"> </use>
   </svg>
 
 </div>
 
-<div class="form-group">
+<div class="form__group">
 <label for="phone">Телефон</label>
   <input type="tel" name="phone" id="phone"/>
-  <svg class="input-icon" width="18" height="18">
+  <svg class="input__icon" width="18" height="18">
     <use href="./images/sprite.svg#icon-phone-black"> </use>
     </svg>
 </div>
 
-  <div class="form-group">
+  <div class="form__group">
 <label for="email"> Почта</label>
   <input type="email" name="e-mail" id="email"/>
-  <svg class="input-icon" width="18" height="18">
+  <svg class="input__icon" width="18" height="18">
     <use href="./images/sprite.svg#icon-email-black"> </use>
     </svg>
 </div>
 
-  <div class="form-group">
+  <div class="form__group">
 <label for="comment">Комментарий</label>
   <textarea id="comment" name="comments" rows="5" placeholder="Введите текст"></textarea>
 </div>
@@ -516,22 +516,15 @@
 
 
 <label class="form-acception" >
-  <input type="checkbox" name="accept" class="accept-check">
-  <!-- <div class="check-icon"> </div> -->
-  <span class="check-icon"></span>
-  <!-- <svg class="check-icon" width="16" height="15">
-    <use href="./images/sprite.svg#icon-Vector"> </use>
-    </svg>  -->
-    <!-- <svg class="check-icon hover-icon" width="16" height="15">
-      <use href="./images/sprite.svg#icon-check"> </use>
-      </svg>  -->
+  <input type="checkbox" name="accept" class="acception__check">
+  
+  <span class="acception__icon"></span>
+
   Соглашаюсь с рассылкой и принимаю
   <a href="/">
     Условия договора
   </a>
 </label> 
-
-
 
 <button type="submit" class="button">Отправить</button>
 </form>
