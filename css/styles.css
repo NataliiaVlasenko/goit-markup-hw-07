@@ -27,6 +27,15 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 .container {
   width: 1200px;
@@ -65,15 +74,12 @@ body {
   overflow: hidden;
 }
 
-.link-global {
-  text-decoration: none;
-  color: inherit;
-}
 
-.link-nav:hover,
-.link-nav:focus,
-.auth-link:hover,
-.auth-link:focus {
+
+.site-nav__link-nav:hover,
+.site-nav__link-nav:focus,
+.auth-nav__auth-link:hover,
+.auth-nav__auth-link:focus {
   color: var(--accent-color);
 }
 
@@ -87,11 +93,7 @@ p {
   margin: 0;
 }
 
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+
 
 .logo {
   color: var(--accent-color);
@@ -103,15 +105,12 @@ p {
   line-height: 1.2;
 }
 
-.logo-part {
+.logo--part-color {
   color: var(--black);
 }
-.footer .logo-part {
-  color: var(--white-color);
-}
+
 
 .site-nav {
-  list-style: none;
   color: var(--headers-color);
   display: flex;
   margin-left: 93px;
@@ -123,19 +122,24 @@ p {
   display: flex;
   margin-left: auto;
   align-items: center;
+  gap:30px;
 }
 
-.auth-nav .item:first-child {
-  margin-right: 30px;
+.site-nav,
+.auth-nav {
+  line-height: 1;
+  letter-spacing: 0.02em;
+  font-weight: 500;
 }
-.link-nav {
+
+.site-nav__link-nav {
   padding: 32px 0;
   position: relative;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.auth-link {
+.auth-nav__auth-link {
   display: flex;
   align-items: center;
   color: inherit;
@@ -146,26 +150,18 @@ p {
   /* outline: 1px solid red; */
 }
 
-.email-icon,
-.phone-icon {
+.auth-nav__icon {
   display: inline-flex;
   margin-right: 10px;
   fill: currentColor;
 }
 
-.site-nav,
-.auth-nav {
-  list-style: none;
-  line-height: 1;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-}
 
-.link-nav.current {
+.site-nav__link-nav--current {
   color: var(--accent-color);
 }
 
-.site-nav .link-nav.current::after {
+.site-nav__link-nav--current::after {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -460,6 +456,10 @@ address .list {
 
 .footer > .container {
   display: flex;
+}
+
+.footer .logo--part-color {
+  color: var(--white-color);
 }
 
 .footer-connect {
