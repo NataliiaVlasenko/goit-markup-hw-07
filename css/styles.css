@@ -266,22 +266,22 @@ p {
 
 .conseption,
 .team,
-.slide {
+.doings{
   display: flex;
   flex-direction: row;
 }
 .conseption,
-.slide {
+.doings{
   gap: 30px;
 }
 
 /* элемент списка */
-.doings-list {
+.doings__item {
   position: relative;
 }
 
 /* подпись */
-.doing-descr {
+.doings__title {
   display: block;
 
   color: var(--white-color);
@@ -354,7 +354,7 @@ p {
   box-shadow: var(--card-shadow);
   border-radius: 4px;
 }
-.section-title {
+.section__title {
   color: var(--headers-color);
 
   font-weight: 700;
