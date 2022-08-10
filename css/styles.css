@@ -265,7 +265,7 @@ p {
 }
 
 .conseption,
-.team,
+.team-list,
 .doings{
   display: flex;
   flex-direction: row;
@@ -321,9 +321,6 @@ p {
   height: 120px;
 }
 
-.list .card + .card {
-  margin-left: 30px;
-}
 .section--no-padding {
   padding-bottom: 0;
 }
@@ -339,17 +336,24 @@ p {
   text-transform: uppercase;
 }
 
-.team-thumb {
+.team-list__thumb {
   padding: 30px 32px;
+  width: 270px;
 }
 
-.team {
+.section--team {
   background-color: var(--button-team-backgr);
-  text-align: center;
 }
 
-.team .card {
-  width: 370px;
+
+.team-list {
+  
+  text-align: center;
+  gap: 30px;
+}
+
+.team-list__card {
+  width: 270px;
   background-color: var(--white-color);
   box-shadow: var(--card-shadow);
   border-radius: 4px;
@@ -365,7 +369,7 @@ p {
   text-align: center;
 }
 
-.team-title {
+.team-list__title {
   color: var(--headers-color);
   font-weight: 500;
   font-size: 16px;
