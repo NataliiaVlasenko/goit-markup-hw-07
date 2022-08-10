@@ -429,23 +429,6 @@ p {
   background-color: var(--accent-color);
 }
 
-.adress {
-  color: var(--white-color);
-  font-style: normal;
-  line-height: 1.71;
-}
-address li:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-address .list {
-  margin-top: 20px;
-}
-
-.contacts {
-  opacity: 0.6;
-}
-
 /* футер */
 
 .footer {
@@ -461,6 +444,27 @@ address .list {
 .footer .logo--part-color {
   color: var(--white-color);
 }
+
+.footer__adress-link {
+  color: var(--white-color);
+  font-style: normal;
+  line-height: 1.71;
+  
+}
+.footer__address {
+  margin-top: 20px;
+  
+}
+.footer__address :not(:last-child) {
+  margin-bottom: 9px;
+} 
+
+.footer__adress-link--opacity {
+  opacity: 0.6;
+}
+
+
+
 
 .footer-connect {
   text-transform: uppercase;
