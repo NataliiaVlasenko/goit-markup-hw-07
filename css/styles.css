@@ -280,19 +280,6 @@ p {
   position: relative;
 }
 
-/* див с подписью */
-/* .doing-backgr{
-  position: absolute;
-  display: block;
-  padding: 27px 0;
-  background-color: rgba(47, 48, 58, 0.8);
-  margin: 0 auto;
-  bottom: 0;
-  left: 0;
-  min-width: 370px;
-
-} */
-
 /* подпись */
 .doing-descr {
   display: block;
@@ -317,14 +304,14 @@ p {
   min-width: 370px;
 }
 
-.coseption-icon {
+.coseption__icon {
   content: "";
   display: block;
   width: 70px;
   height: 70px;
 }
 
-.icon-cons-backgr {
+.conseption__icon-backgr{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -340,7 +327,7 @@ p {
 .section--no-padding {
   padding-bottom: 0;
 }
-.conseption-title {
+.conseption__title {
   color: var(--headers-color);
 
   font-weight: 700;
