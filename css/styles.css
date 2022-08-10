@@ -15,6 +15,7 @@
   --card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   --icon-fill: rgba(175, 177, 184, 1);
+  --social-icon-bcgr-footer:  rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -74,8 +75,6 @@ ul {
   overflow: hidden;
 }
 
-
-
 .site-nav__link-nav:hover,
 .site-nav__link-nav:focus,
 .auth-nav__auth-link:hover,
@@ -108,7 +107,6 @@ p {
 .logo--part-color {
   color: var(--black);
 }
-
 
 .site-nav {
   color: var(--headers-color);
@@ -191,7 +189,7 @@ p {
   text-align: center;
   padding: 200px 0;
 }
-.hero-title {
+.hero__title {
   color: var(--white-color);
 
   letter-spacing: 0.06em;
@@ -246,8 +244,6 @@ p {
   border-width: 0;
   padding: 6px 22px;
 
-  /* transition-property: background-color;
-  transition-property: box-shadow; */
   transition-property: color, box-shadow, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -341,7 +337,7 @@ p {
 .list .card + .card {
   margin-left: 30px;
 }
-.no-padding {
+.section--no-padding {
   padding-bottom: 0;
 }
 .conseption-title {
@@ -464,41 +460,41 @@ p {
 }
 
 
-
-
-.footer-connect {
+.footer__social-title{
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   color: var(--white-color);
-}
-.footer-social {
+  margin-bottom: 20px;
+  }
+
+.footer__social {
   margin-left: 70px;
   margin-right: 93px;
 }
 
-.footer-social .social-media {
-  background-color: rgba(255, 255, 255, 0.1);
+.footer__social .social-media {
+  background-color: var(--social-icon-bcgr-footer);
 
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-social .social-icon {
+.footer__social .social-icon {
   fill: var(--white-color);
 
 }
 
-.footer-social .social-media:hover,
-.footer-social .social-media:focus {
+.footer__social .social-media:hover,
+.footer__social .social-media:focus {
   background-color: var(--accent-color);
 }
 
-.footer-subscr {
+.footer__subscr {
   margin: 0 auto;
 }
 
-.subscr-input {
+.subscr-form__input {
   padding: 15px;
   width: 358px;
   margin-right: 12px;
@@ -512,23 +508,19 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* .subscr-input:focus {
-  outline: 1px solid var(--accent-color);
-} */
-
-.subscr-pair {
+.subscr-form{
   display: flex;
-  margin-top: 20px;
+  
 }
 
-.subscr-pair .send-email {
+.subscr-form .button--send-email {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 0;
 }
 
-.send-email .social-icon {
+.button--send-email .social-icon {
    margin-left: 10px;
 }
 
