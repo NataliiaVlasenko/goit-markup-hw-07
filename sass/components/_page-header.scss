@@ -1,0 +1,15 @@
+
+  
+  .page-header {
+    border-bottom: 1px solid var(--header-border);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .page-header > .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    

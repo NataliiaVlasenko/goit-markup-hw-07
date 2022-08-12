@@ -1,0 +1,29 @@
+.team-list {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+    gap: 30px;
+}
+
+.team-list__thumb {
+    padding: 30px 32px;
+    width: 270px;
+  }
+ 
+  .team-list__card {
+    width: 270px;
+    background-color: var(--white-color);
+    box-shadow: var(--card-shadow);
+    border-radius: 4px;
+  }
+
+  
+.team-list__title {
+    color: var(--headers-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+  
+    margin-bottom: 10px;
+  }
+
