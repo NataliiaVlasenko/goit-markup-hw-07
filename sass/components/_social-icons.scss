@@ -17,23 +17,19 @@
     border-radius: 22px;
     /* outline: 1px solid red; */
     transition: background-color 250ms var(--transition-function);
-  }
+
+&:hover, &:focus { border-radius: 50%;
+  background-color: var(--accent-color);
+};
+
+&:hover .social-icon, &:focus .social-icon { fill: var(--white-color);};
+
+}
   
   /* иконка svg */
   .social-icon {
     fill: var(--icon-fill);
 
-    .social-media:hover& ,.social-media:focus {fill: var(--white-color);}
-  }
-  
-//   .social-media:hover .social-icon,
-//   .social-media:focus .social-icon {
-//     fill: var(--white-color);
-//   }
-  
-  .social-media:hover,
-  .social-media:focus {
-    border-radius: 50%;
-    background-color: var(--accent-color);
-  }
-  
+     }
+ 
+ 
