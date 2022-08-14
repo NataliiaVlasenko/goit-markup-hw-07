@@ -7,9 +7,10 @@
     display: flex;
 
     .button--send-email {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      @include centredFlex();
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
         padding: 10px 0;
 
         .social-icon {

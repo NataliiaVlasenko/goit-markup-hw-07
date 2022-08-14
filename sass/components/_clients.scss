@@ -16,14 +16,15 @@
 
   
 .client__item {
-    // width: calc(100% / 6-var(var(--card-set-gap)));
-    width: 170px;
+    width: calc( 100% / 6 - var(var(--card-set-gap)));
+    // width: 170px;
     justify-content: space-between;
   }
   .client__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centredFlex();
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     width: 170px;
     height: 92px;
   

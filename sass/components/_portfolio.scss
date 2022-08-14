@@ -22,7 +22,7 @@
   }
   
    .project-example__item {
-    // outline: 1px solid red;
+    
     max-width: 370px;
 
     flex-basis: calc(100% - 2 * var(--card-set-gap) / 3);
@@ -63,17 +63,24 @@
     padding: 63px 24px;
   
     opacity: 0;
-  
-    transition: opacity 250ms var(--transition-function),
-      background-color 250ms var(--transition-function);
-  
     transform: translateY(100%);
-    transition: transform 250ms var(--transition-function);
+    transition: opacity 250ms var(--transition-function),
+      background-color 250ms var(--transition-function), transform 250ms var(--transition-function);
+  
+       
   }
   
   .card {
-    transition: opacity 250ms var(--transition-function),
-      box-shadow 250ms var(--transition-function);
+     
+      transition: opacity 250ms var(--transition-function),
+      box-shadow 250ms var(--transition-function), transform 250ms var(--transition-function);
+
+      &:hover, &:focus {box-shadow: var(--card-shadow);};
+
+      &:hover  .card__hover {
+        opacity: 1;
+        transform: translateY(0);
+      };
   }
   
   .project-example__title {
@@ -91,53 +98,5 @@
     line-height: 1.8;
   }
   
-  .card:hover,
-  .card:focus {
-    box-shadow: var(--card-shadow);
-  }
+
   
-  .card:hover .card__hover {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .clients {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: var(--card-set-gap);
-  }
-  
-  .client__icon {
-    width: 106px;
-    height: 60px;
-    fill: var(--icon-fill);
-  
-    transition: fill 250ms var(--transition-function);
-  }
-  .client__item {
-    width: calc(100% / 6 - var(--card-set-gap));
-    justify-content: space-between;
-  }
-  .client__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
-  
-    border: 1px solid var(--border-client-link);
-    border-radius: 4px;
-  
-    transition: border 250ms var(--transition-function);
-  }
-  
-  .client__link:hover .client__icon,
-  .client__link:focus .client__icon {
-    fill: var(--accent-color);
-  }
-  .client__link:hover,
-  .client__link:focus {
-    border: 1px solid var(--accent-color);
-    cursor: pointer;
-  }

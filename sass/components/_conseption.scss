@@ -21,9 +21,10 @@
   }
 
 .conseption__icon-backgr {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  @include centredFlex();
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     background-color: var(--button-team-backgr);
     border-radius: 4px;
     width: 270px;
