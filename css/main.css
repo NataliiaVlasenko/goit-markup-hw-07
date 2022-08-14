@@ -143,7 +143,8 @@ img {
   font-size: 26px;
   line-height: 1.2;
 }
-.logo--part-color {
+
+.logo__part-color {
   color: var(--black);
 }
 
@@ -482,7 +483,7 @@ img {
   fill: var(--icon-fill);
 }
 
-.clients {
+.client {
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -536,7 +537,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer .logo--part-color {
+.footer .logo__part-color {
   color: var(--white-color);
 }
 
@@ -690,7 +691,7 @@ img {
   transition: fill 250ms var(--transition-function);
 }
 
-.form__header {
+.form-header {
   text-align: center;
   font-size: 20px;
   line-height: 1.15;
@@ -716,7 +717,7 @@ img {
   position: relative;
   /* outline: 1px solid red;   */
 }
-.form__group input {
+.form__group textarea, .form__group input {
   outline: 1px solid rgba(33, 33, 33, 0.2);
   border: none;
   border-radius: 4px;
@@ -726,16 +727,16 @@ img {
   -webkit-transition: outline 250ms var(--transition-function);
   transition: outline 250ms var(--transition-function);
 }
-.form__group textarea {
+.form__group input {
   margin-bottom: 10px;
   padding: 11px 0 11px 42px;
   height: 40px;
 }
-.form__group textarea:focus {
+.form__group input:focus {
   outline: 1px solid var(--accent-color);
   border: none;
 }
-.form__group textarea:focus + .input__icon {
+.form__group input:focus + .input-icon {
   fill: var(--accent-color);
 }
 .form__group textarea {
@@ -764,7 +765,7 @@ img {
   border: none;
 }
 
-.input__icon {
+.input-icon {
   position: absolute;
   top: 55%;
   left: 12px;
@@ -799,7 +800,7 @@ img {
   cursor: pointer;
 }
 
-.acception__icon {
+.form-acception__icon {
   position: absolute;
   left: 12px;
   width: 16px;
@@ -809,13 +810,13 @@ img {
   opacity: 1;
 }
 
-.acception__check {
+.form-acception__check {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
   padding: 0;
 }
-.acception__check:checked + .acception__icon {
+.form-acception__check:checked + .form-acception__icon {
   background-color: var(--accent-color);
   background-image: url(../images/icon-check.svg);
   /* border: none; */
@@ -823,7 +824,7 @@ img {
   border-color: var(--accent-color);
 }
 
-.filtr-button__list {
+.filtr-button-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
